@@ -11,10 +11,8 @@ import { TestComponent } from './test/test.component';
 export class AppComponent {
   title = 'MyAngularApp';
 
-  display() {
-    alert('Click Event is triggered');
-  }
-  displayMsg(msg:string) {
-    alert(msg);
+  count = 0
+  counter(type:String) {
+    type === 'incr' ? this.count ++ : this.count --
   }
 }
