@@ -11,8 +11,10 @@ import { TestComponent } from './test/test.component';
 export class AppComponent {
   title = 'MyAngularApp';
 
-  inputValue: string = 'Hello';
-  isDisabled: boolean = false;
-
-  imgSrc: string = "/assets/Angular.png";
+  display() {
+    alert('Click Event is triggered');
+  }
+  displayMsg(msg:string) {
+    alert(msg);
+  }
 }
