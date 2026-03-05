@@ -11,8 +11,12 @@ import { TestComponent } from './test/test.component';
 export class AppComponent {
   title = 'MyAngularApp';
 
-  count = 0
-  counter(type:String) {
-    type === 'incr' ? this.count ++ : this.count --
+  counter = 0;
+  incr() {
+    this.counter++;
+  }
+
+  onKeyPress(e:any) {
+    console.log(e.target.value);
   }
 }
