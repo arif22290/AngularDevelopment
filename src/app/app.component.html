@@ -10,5 +10,6 @@
 <!-- <input type="text" (keyup)="onKeyPress()"> -->
 <!-- <input type="text" (focus)="onKeyPress()"> -->
 <!-- <input type="text" (select)="onKeyPress()"> -->
-<input type="text" (keypress)="onKeyPress($event)">
+<!-- <input type="text" (keypress)="onKeyPress($event)"> -->
+<input type="text" (keydown)="isShift($event)" />
 <router-outlet />

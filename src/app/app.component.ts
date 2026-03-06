@@ -11,12 +11,17 @@ import { TestComponent } from './test/test.component';
 export class AppComponent {
   title = 'MyAngularApp';
 
-  counter = 0;
-  incr() {
-    this.counter++;
-  }
+  // counter = 0;
+  // incr() {
+  //   this.counter++;
+  // }
 
-  onKeyPress(e:any) {
-    console.log(e.target.value);
+  // onKeyPress(e:any) {
+  //   console.log(e.target.value);
+  // }
+  isShift(event: any) {
+    if (event.shiftKey && event.key === 'Y') {
+      console.log('shift + y is pressed', event);
+    }
   }
 }
